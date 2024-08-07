@@ -134,7 +134,7 @@ def formatting_prompts_func(examples):
 pass
 
 from datasets import load_dataset
-csv_file_path = "./dataset/detailed_medical_reports_dataset15_06_2024.csv"
+csv_file_path = "./dataset/ADMR.csv"
 dataset = load_dataset('csv', data_files={'train': csv_file_path}) #for own dataset loading
 # dataset = load_dataset("yahma/alpaca-cleaned")
 dataset = dataset.map(formatting_prompts_func, batched = True,)
@@ -183,7 +183,7 @@ logging.info("Training completed. Here are the stats:")
 logging.info(trainer_stats)
 
 # Log the training_stats.log file to wandb
-wandb.save("training_stats_llama3_15_06_2024.log")
+wandb.save("training_stats_llama3.log")
 
 # alpaca_prompt = Copied from above
 FastLanguageModel.for_inference(model) # Enable native 2x faster inference
