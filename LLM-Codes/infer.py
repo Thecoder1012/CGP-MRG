@@ -18,15 +18,15 @@ import numpy as np
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # Load the CSV file
-csv_path = '/LLM/dataset/test_detailed_medical_reports_dataset19_07_2024.csv'
+csv_path = '/LLM/dataset/test.csv'
 df = pd.read_csv(csv_path)
-output_file_path = '../scores/output_scores_llama3_19_07_2024.txt'
+output_file_path = '../scores/score.txt'
 # Load the model and tokenizer
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name="/LLM/v3_models/lora_model_llama3_15_07_2024",
+    model_name="/LLM/lora_model",
     max_seq_length=4000,
     dtype=torch.float16,
-    cache_dir="/LLM/llama3_8b_experiment_2",
+    cache_dir="/LLM/llama3",
     load_in_4bit=True,
 )
 model = model.to("cuda:0")
