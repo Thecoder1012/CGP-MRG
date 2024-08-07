@@ -1,0 +1,396 @@
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0600
+Mild Cognitive Impairment: 99.4800
+Dementia: 0.4600
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 99.8900
+Mild Cognitive Impairment: 0.1100
+Dementia: 0.0000
+
+Cognitively Normal: 0.0900
+Mild Cognitive Impairment: 55.5500
+Dementia: 44.3600
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0200
+Mild Cognitive Impairment: 99.8700
+Dementia: 0.1100
+
+Cognitively Normal: 99.9800
+Mild Cognitive Impairment: 0.0200
+Dementia: 0.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0200
+Dementia: 99.9800
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9800
+Dementia: 0.0200
+
+Cognitively Normal: 99.9800
+Mild Cognitive Impairment: 0.0200
+Dementia: 0.0000
+
+Cognitively Normal: 0.2000
+Mild Cognitive Impairment: 99.4800
+Dementia: 0.3200
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 0.2500
+Dementia: 99.7400
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0200
+Mild Cognitive Impairment: 99.9000
+Dementia: 0.0700
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 99.9900
+Dementia: 0.0100
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9700
+Dementia: 0.0300
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 99.9600
+Mild Cognitive Impairment: 0.0300
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0900
+Mild Cognitive Impairment: 99.7100
+Dementia: 0.2100
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 99.9300
+Mild Cognitive Impairment: 0.0700
+Dementia: 0.0000
+
+Cognitively Normal: 0.3400
+Mild Cognitive Impairment: 98.1300
+Dementia: 1.5300
+
+Cognitively Normal: 3.9400
+Mild Cognitive Impairment: 93.6500
+Dementia: 2.4100
+
+Cognitively Normal: 0.5100
+Mild Cognitive Impairment: 97.4100
+Dementia: 2.0800
+
+Cognitively Normal: 3.8000
+Mild Cognitive Impairment: 87.0400
+Dementia: 9.1700
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 1.1100
+Mild Cognitive Impairment: 96.7800
+Dementia: 2.1100
+
+Cognitively Normal: 0.0400
+Mild Cognitive Impairment: 99.8300
+Dementia: 0.1300
+
+Cognitively Normal: 99.2700
+Mild Cognitive Impairment: 0.7200
+Dementia: 0.0100
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0700
+Dementia: 99.9300
+
+Cognitively Normal: 65.0400
+Mild Cognitive Impairment: 33.2600
+Dementia: 1.7100
+
+Cognitively Normal: 99.9700
+Mild Cognitive Impairment: 0.0300
+Dementia: 0.0000
+
+Cognitively Normal: 0.7200
+Mild Cognitive Impairment: 98.4600
+Dementia: 0.8100
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 0.1200
+Dementia: 99.8800
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9700
+Dementia: 0.0300
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0200
+Mild Cognitive Impairment: 99.9300
+Dementia: 0.0500
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.5200
+Mild Cognitive Impairment: 95.6600
+Dementia: 3.8200
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 99.9500
+Dementia: 0.0500
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9600
+Dementia: 0.0300
+
+Cognitively Normal: 0.0800
+Mild Cognitive Impairment: 99.0500
+Dementia: 0.8700
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9400
+Dementia: 0.0500
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0700
+Mild Cognitive Impairment: 99.5000
+Dementia: 0.4300
+
+Cognitively Normal: 0.0800
+Mild Cognitive Impairment: 99.0800
+Dementia: 0.8400
+
+Cognitively Normal: 0.0200
+Mild Cognitive Impairment: 99.8800
+Dementia: 0.1000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0500
+Dementia: 99.9500
+
+Cognitively Normal: 99.7800
+Mild Cognitive Impairment: 0.2200
+Dementia: 0.0000
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0100
+Dementia: 99.9900
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0500
+Dementia: 99.9500
+
+Cognitively Normal: 0.6400
+Mild Cognitive Impairment: 99.0400
+Dementia: 0.3200
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.7300
+Mild Cognitive Impairment: 98.9000
+Dementia: 0.3700
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 99.9900
+Dementia: 0.0100
+
+Cognitively Normal: 4.1000
+Mild Cognitive Impairment: 95.8800
+Dementia: 0.0100
+
+Cognitively Normal: 2.8200
+Mild Cognitive Impairment: 97.1700
+Dementia: 0.0100
+
+Cognitively Normal: 99.9900
+Mild Cognitive Impairment: 0.0100
+Dementia: 0.0000
+
+Cognitively Normal: 1.3100
+Mild Cognitive Impairment: 98.4800
+Dementia: 0.2100
+
+Cognitively Normal: 0.0200
+Mild Cognitive Impairment: 99.9700
+Dementia: 0.0200
+
+Cognitively Normal: 100.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 0.0000
+
+Cognitively Normal: 15.8100
+Mild Cognitive Impairment: 83.6500
+Dementia: 0.5400
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9800
+Dementia: 0.0100
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9300
+Dementia: 0.0700
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0800
+Dementia: 99.9200
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0000
+Dementia: 100.0000
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9600
+Dementia: 0.0300
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 0.0300
+Dementia: 99.9700
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 99.9600
+Dementia: 0.0400
+
+Cognitively Normal: 1.4600
+Mild Cognitive Impairment: 98.4600
+Dementia: 0.0700
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 99.9900
+Dementia: 0.0100
+
+Cognitively Normal: 0.0000
+Mild Cognitive Impairment: 100.0000
+Dementia: 0.0000
+
+Cognitively Normal: 0.0100
+Mild Cognitive Impairment: 99.9800
+Dementia: 0.0100
+
