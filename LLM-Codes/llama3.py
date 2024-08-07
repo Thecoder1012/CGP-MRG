@@ -6,8 +6,8 @@ import logging
 import wandb
 
 # Set up wandb
-wandb.login(key="5deddb0a12b5ef755ce536d4b3e9a55380e68e73")
-wandb.init(project="LLM_Alzheimer", entity="arkaprabha17")  # Replace 'your_username' with your personal username
+wandb.login(key="")
+wandb.init(project="LLM_Alzheimer", entity="")  # Replace 'your_username' with your personal username
 
 
 class LoggingCallback(TrainerCallback):
@@ -134,9 +134,6 @@ def formatting_prompts_func(examples):
 pass
 
 from datasets import load_dataset
-# dataset = load_dataset("yahma/alpaca-cleaned", split = "train")
-# csv_file_path = "/content/drive/MyDrive/LLM/dataset/Alzheimers_Disease_Medical_Report_Dataset_20k_Rows.csv" #for arkaprabha1012
-# csv_file_path = "./dataset/Alzheimers_Disease_Medical_Report_20000_Rows.csv" #for arkaprabha17
 csv_file_path = "./dataset/detailed_medical_reports_dataset15_06_2024.csv"
 dataset = load_dataset('csv', data_files={'train': csv_file_path}) #for own dataset loading
 # dataset = load_dataset("yahma/alpaca-cleaned")
@@ -202,6 +199,6 @@ inputs = tokenizer(
 outputs = model.generate(**inputs, max_new_tokens = 64, use_cache = True)
 logging.info(tokenizer.batch_decode(outputs))
 
-model.save_pretrained("lora_model_llama3_15_06_2024") # Local saving
+model.save_pretrained("lora_model_llama3") # Local saving
 # model.push_to_hub("your_name/lora_model", token = "...") # Online saving
 
