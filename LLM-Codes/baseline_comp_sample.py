@@ -45,35 +45,13 @@ alpaca_prompt = """Below is an instruction that describes a task, paired with an
 ### Response:
 {}"""
 
-# model_llm, tokenizer = FastLanguageModel.from_pretrained(
-#     model_name = "/DATA1/arkaprabha/LLM/mistral-7b_unsloth",
-#     max_seq_length = max_seq_length,
-#     dtype = dtype,
-#     load_in_4bit = load_in_4bit,
-# )
-
 model_llm, tokenizer = FastLanguageModel.from_pretrained(
     model_name = "unsloth/llama-2-7b",
     max_seq_length = max_seq_length,
     dtype = dtype,
-    cache_dir = "/DATA1/arkaprabha/LLM/llama2_7b_experiment_2",
+    cache_dir = "/LLM/llama2_7b_experiment",
     load_in_4bit = load_in_4bit,
 )
-
-# model_llm = FastLanguageModel.get_peft_model(
-#     model_llm,
-#     r = 16, # Choose any number > 0 ! Suggested 8, 16, 32, 64, 128
-#     target_modules = ["q_proj", "k_proj", "v_proj", "o_proj",
-#                       "gate_proj", "up_proj", "down_proj",],
-#     lora_alpha = 16,
-#     lora_dropout = 0, # Supports any, but = 0 is optimized
-#     bias = "none",    # Supports any, but = "none" is optimized
-#     # [NEW] "unsloth" uses 30% less VRAM, fits 2x larger batch sizes!
-#     use_gradient_checkpointing = "unsloth", # True or "unsloth" for very long context
-#     random_state = 3407,
-#     use_rslora = False,  # We support rank stabilized LoRA
-#     loftq_config = None, # And LoftQ
-# )
 
 EOS_TOKEN = tokenizer.eos_token # Must add EOS_TOKEN
 def formatting_prompts_func(examples):
@@ -165,7 +143,7 @@ with open("./probs.txt", 'r') as file:
 
 contents_list = contents.strip().split('\n\n')
 
-csv_file_path = '/DATA1/arkaprabha/LLM/dataset/test_detailed_medical_reports_dataset19_07_2024.csv'
+csv_file_path = './test_detailed_medical_reports_dataset19_07_2024.csv'
 csv_data = pd.read_csv(csv_file_path)
 csv_inputs = csv_data['Input'].apply(parse_probabilities)
 csv_outputs = csv_data['Output']
@@ -176,7 +154,7 @@ for formatted_output in contents_list:
 
     # print("preds:", formatted_output)
 
-    # csv_file_path = '/DATA1/arkaprabha/LLM/baseline_comp/report.csv'
+    # csv_file_path = './LLM/baseline_comp/report.csv'
     output_file_path = f"./pretrained/llama2/{cnt}.txt"
     cnt = cnt + 1
 
