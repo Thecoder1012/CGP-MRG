@@ -12,7 +12,6 @@ To set up the environment, follow these steps:
 # Clone the repository
 
 # Navigate to the project directory
-cd cgp-mrg
 
 # Install the required packages
 pip install -r requirements.txt
