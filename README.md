@@ -91,6 +91,8 @@ Here is a comparison of various LLaMA models, including both pre-trained and fin
 
 **PCoT-SP** is a key component of our methodology, enhancing the medical report generation process through structured prompting and progressive refinement.
 
+A special thanks to **Claude** 🤖 and **MedGPT** 🩺 for their support and insights in this project.
+
 ---
 
 Feel free to contribute to the project or raise issues. Your feedback is valuable!
