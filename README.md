@@ -21,23 +21,23 @@ python3 ./LLM-Codes/infer.py
 
 To use direct probabilities from classification models:
 ````
-python ./LLM-Codes/baseline_comp_sample.py
+python3 ./LLM-Codes/baseline_comp_sample.py
 ````
 
 ### Models and Data
 - LoRA models: https://drive.google.com/drive/folders/1JjG6C0xO5INWj_MtnqE-76KCp1F510g1?usp=sharing
 - Interactive notebook in Google Colab for pretrained baselines (Llama 3 8b, Llama 2 7b, Mistral 7b, Gemma 7b, Phi3 Medium)
+  ````
+  ./LLM-Codes/baseline_pretrained.ipynb
+  ````
 - ADMR-Test dataset:
-
   ````
   ./dataset/test.csv
   ````
-  
 - Classification model probabilities:
-````
-./dataset/probs.txt
-````
-
+  ````
+  ./dataset/probs.txt
+  ````
 ### PCoT-SP: Progressive-LLM-guided CoT prompt with structured-Section-Phrase
 
 ![PCoT-SP-1](https://github.com/user-attachments/assets/5ebd1e1b-6e27-4f71-92a5-e4d798a3b654)
