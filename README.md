@@ -10,7 +10,6 @@ To set up the environment, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/cgp-mrg.git
 
 # Navigate to the project directory
 cd cgp-mrg
