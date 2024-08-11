@@ -143,7 +143,7 @@ with open("./probs.txt", 'r') as file:
 
 contents_list = contents.strip().split('\n\n')
 
-csv_file_path = './test_detailed_medical_reports_dataset19_07_2024.csv'
+csv_file_path = './test.csv'
 csv_data = pd.read_csv(csv_file_path)
 csv_inputs = csv_data['Input'].apply(parse_probabilities)
 csv_outputs = csv_data['Output']
