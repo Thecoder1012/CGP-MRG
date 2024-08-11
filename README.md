@@ -76,17 +76,6 @@ Feel free to contribute to the project or raise issues. Your feedback is valuabl
 
 ---
 
-### **License**
-This project is licensed under the [MIT License](LICENSE).
-
-### **Contributors**
-- [Your Name](https://github.com/your-profile)
-- [Contributor 2](https://github.com/contributor-profile)
-
----
-
 **Star** ⭐ this repository if you found it helpful!
 
 ---
-
-This version of the README includes organized sections, clearer instructions, and a professional look that enhances the readability and usability of your project.
