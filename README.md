@@ -10,8 +10,6 @@ CGP-MRG (Cognition-Guided Prompting for Medical Report Generation) is an innovat
 ````
 clone the git
 
-cd CGP-MRG
-
 pip install -r requirements.txt
 ````
 ### Usage
