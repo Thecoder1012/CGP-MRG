@@ -15,17 +15,29 @@ pip install -r requirements.txt
 ### Usage
 
 To run the code on the ADMR-Test dataset:
-$ python ./LLM-Codes/infer.py
+```
+python3 ./LLM-Codes/infer.py
+````
 
 To use direct probabilities from classification models:
-$ python ./LLM-Codes/baseline_comp_sample.py
+
+````
+python ./LLM-Codes/baseline_comp_sample.py
+````
 
 ### Models and Data
-
 - LoRA models: https://drive.google.com/drive/folders/1JjG6C0xO5INWj_MtnqE-76KCp1F510g1?usp=sharing
 - Interactive notebook in Google Colab for pretrained baselines (Llama 3 8b, Llama 2 7b, Mistral 7b, Gemma 7b, Phi3 Medium)
-- ADMR-Test dataset: ./dataset/test.csv
-- Classification model probabilities: ./dataset/probs.txt
+- ADMR-Test dataset:
+
+  ````
+  ./dataset/test.csv
+  ````
+  
+- Classification model probabilities:
+````
+./dataset/probs.txt
+````
 
 ### PCoT-SP: Progressive-LLM-guided CoT prompt with structured-Section-Phrase
 
