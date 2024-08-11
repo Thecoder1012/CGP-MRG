@@ -7,11 +7,13 @@
 CGP-MRG (Cognition-Guided Prompting for Medical Report Generation) is an innovative approach to generating medical reports for Alzheimer's Disease using fine-tuned Large Language Models. This project aims to provide accurate, cost-effective, and efficient medical report generation while maintaining high-quality outputs.
 
 ### Installation
+````
+clone the git
 
-$ clone the git
-$ cd CGP-MRG
-$ pip install -r requirements.txt
+cd CGP-MRG
 
+pip install -r requirements.txt
+````
 ### Usage
 
 To run the code on the ADMR-Test dataset:
