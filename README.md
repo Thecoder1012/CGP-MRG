@@ -24,7 +24,7 @@ pip install -r requirements.txt
 python3 ./LLM-Codes/infer.py
 ```
 
-### Use Direct Probabilities from Classification Models:
+### Use Direct Probabilities of Cognitive Status:
 ```bash
 python3 ./LLM-Codes/baseline_comp_sample.py
 ```
