@@ -20,7 +20,6 @@ python3 ./LLM-Codes/infer.py
 ````
 
 To use direct probabilities from classification models:
-
 ````
 python ./LLM-Codes/baseline_comp_sample.py
 ````
