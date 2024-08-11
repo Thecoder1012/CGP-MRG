@@ -1,3 +1,4 @@
+```markdown
 # **Cutting Costs, Not Corners: Multi-Modal Medical Report Generation for Alzheimer’s Disease with Fine-Tuned Large Language Models**
 ---
 
@@ -62,6 +63,29 @@ Download the model probabilities:
 
 ---
 
+## **Performance Comparison**
+
+Here is a comparison of various LLaMA models, including both pre-trained and fine-tuned versions:
+
+| Metric          | Pretrained Llama 2 | Fine-tuned Llama 2 | Pretrained Llama 3 | Fine-tuned Llama 3 |
+|-----------------|--------------------|--------------------|--------------------|--------------------|
+| Perplexity      | 2.3045              | 1.9081              | 2.1532              | **1.8520**          |
+| BLEU            | 0.0041              | 0.2350              | 0.1584              | **0.2646**          |
+| ROUGE-1         | 0.4892              | 0.5198              | 0.5103              | **0.5279**          |
+| ROUGE-2         | 0.2187              | 0.2432              | 0.2398              | **0.2477**          |
+| ROUGE-L         | 0.3312              | 0.3589              | 0.3521              | **0.3656**          |
+| BERTScore-P     | 0.7212              | **0.9178**          | 0.9068              | **0.9154**          |
+| BERTScore-R     | 0.6939              | 0.9068              | 0.9102              | **0.9115**          |
+| BERTScore-F1    | 0.7058              | 0.9120              | 0.9040              | **0.9132**          |
+| Distinct-1      | 0.7144              | 0.7541              | 0.7589              | **0.7758**          |
+| Distinct-2      | 0.8261              | 0.9695              | 0.9672              | **0.9683**          |
+| Repetition Rate | 0.3060              | **0.2411**          | 0.2459              | **0.2242**          |
+| Length Ratio    | 0.7281              | 0.7814              | 0.8726              | **0.9798**          |
+
+**Bold** - best performance. **Underlined** - second-best performance for each metric.
+
+---
+
 ## **PCoT-SP: Progressive-LLM-guided CoT Prompt with Structured-Section-Phrase**
 
 [![PCoT-SP-1](https://github.com/user-attachments/assets/5ebd1e1b-6e27-4f71-92a5-e4d798a3b654)](#)
@@ -75,5 +99,3 @@ Feel free to contribute to the project or raise issues. Your feedback is valuabl
 ---
 
 **Star** ⭐ this repository if you found it helpful!
-
----
