@@ -56,7 +56,7 @@ Access the ADMR-Test dataset:
 ```
 
 ### Classification Model Probabilities:
-Download the classification model probabilities:
+Download the model probabilities:
 ```bash
 ./dataset/probs.txt
 ```
