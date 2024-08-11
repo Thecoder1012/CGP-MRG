@@ -91,6 +91,11 @@ Here is a comparison of various LLaMA models, including both pre-trained and fin
 
 **PCoT-SP** is a key component of our methodology, enhancing the medical report generation process through structured prompting and progressive refinement.
 
+## **Visual Performance Insights**
+An overview of various performance metrics for different models, including GPU utilization, memory access time, and power usage.
+
+![low_cost](https://github.com/user-attachments/assets/c1dcec65-4f7b-4353-8a7a-e7f2177db3ac)
+
 A special thanks to **Claude** 🤖 and **MedGPT** 🩺 for their support and insights in this project.
 
 ---
