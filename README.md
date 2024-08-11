@@ -1,6 +1,6 @@
-# CGP-MRG: Cognition-Guided Prompting for Alzheimer's Disease Medical Report Generation
+# Cutting Costs, Not Corners: Multi-Modal Medical Report Generation for Alzheimer’s Disease with Fine-Tuned Large Language Models
 
-## Cutting Costs, Not Corners: Multi-Modal Medical Report Generation for Alzheimer's Disease with Fine-Tuned Large Language Models
+## CGP-MRG: Cognition-Guided Prompting for Alzheimer's Disease Medical Report Generation
 
 ![CGP-MRG_v2-1](https://github.com/user-attachments/assets/28d2dc61-9f92-42ab-a9f9-5cc42c0e7f81)
 
