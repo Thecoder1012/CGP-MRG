@@ -99,6 +99,11 @@ An overview of various performance metrics for different models, including GPU u
 
 ![low_cost](https://github.com/user-attachments/assets/c1dcec65-4f7b-4353-8a7a-e7f2177db3ac)
 
+We've added some sample reports to validate our results in the testing stage from Pretrained Llama 3. 
+```bash
+./LLM-Codes/sample_reports
+```
+
 A special thanks to **Claude** 🤖 and **MedGPT** 🩺 for their support and insights in this project.
 
 ---
