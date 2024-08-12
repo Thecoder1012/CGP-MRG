@@ -76,12 +76,12 @@ Here is a comparison of various LLaMA models, including both pre-trained and fin
 | ROUGE-1         | 0.4892              | 0.5198              | 0.5103              | **0.5279**          |
 | ROUGE-2         | 0.2187              | 0.2432              | 0.2398              | **0.2477**          |
 | ROUGE-L         | 0.3312              | 0.3589              | 0.3521              | **0.3656**          |
-| BERTScore-P     | 0.7212              | **0.9178**          | 0.9068              | **0.9154**          |
+| BERTScore-P     | 0.7212              | **0.9178**          | 0.9068              | 0.9154              |
 | BERTScore-R     | 0.6939              | 0.9068              | 0.9102              | **0.9115**          |
 | BERTScore-F1    | 0.7058              | 0.9120              | 0.9040              | **0.9132**          |
 | Distinct-1      | 0.7144              | 0.7541              | 0.7589              | **0.7758**          |
-| Distinct-2      | 0.8261              | 0.9695              | 0.9672              | **0.9683**          |
-| Repetition Rate | 0.3060              | **0.2411**          | 0.2459              | **0.2242**          |
+| Distinct-2      | 0.8261              | **0.9695**          | 0.9672              | 0.9683              |
+| Repetition Rate | 0.3060              | 0.2411              | 0.2459              | **0.2242**          |
 | Length Ratio    | 0.7281              | 0.7814              | 0.8726              | **0.9798**          |
 
 **Bold** - best performance. **Underlined** - second-best performance for each metric.
