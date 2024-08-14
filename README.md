@@ -1,6 +1,7 @@
 # **Cutting Costs, Not Corners: Multi-Modal Medical Report Generation for Alzheimer’s Disease with Fine-Tuned Large Language Models**
 ---
 ![response2](https://github.com/user-attachments/assets/45c0660c-75c6-4599-ab17-a0c079576c7e)
+![CGP-MRG Response](https://github.com/Thecoder1012/CGP-MRG/blob/main/assets/cgp-mrg.gif)
 
 
 **CGP-MRG** (Cognition-Guided Prompting for Medical Report Generation) is a cutting-edge approach designed to generate accurate, cost-effective, and efficient medical reports for Alzheimer's Disease. Leveraging fine-tuned Large Language Models (LLMs), this project aims to deliver high-quality outputs while maintaining cost efficiency.
