@@ -96,7 +96,7 @@ Here is a comparison of various LLaMA models, including both pre-trained and fin
 ## **Visual Performance Insights**
 An overview of various performance metrics for different models, including GPU utilization, memory access time, and power usage.
 
-![low_cost](https://github.com/user-attachments/assets/c1dcec65-4f7b-4353-8a7a-e7f2177db3ac)
+![Low Cost](https://github.com/Thecoder1012/CGP-MRG/blob/main/assets/low-cost.jpg)
 
 We've added some sample reports to validate our results in the testing stage from Pretrained and fine tuned LLM. 
 ```bash
