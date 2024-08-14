@@ -1,12 +1,11 @@
 # **Cutting Costs, Not Corners: Multi-Modal Medical Report Generation for Alzheimer’s Disease with Fine-Tuned Large Language Models**
 ---
-![response2](https://github.com/user-attachments/assets/45c0660c-75c6-4599-ab17-a0c079576c7e)
 ![CGP-MRG Response](https://github.com/Thecoder1012/CGP-MRG/blob/main/assets/cgp-mrg.gif)
 
 
 **CGP-MRG** (Cognition-Guided Prompting for Medical Report Generation) is a cutting-edge approach designed to generate accurate, cost-effective, and efficient medical reports for Alzheimer's Disease. Leveraging fine-tuned Large Language Models (LLMs), this project aims to deliver high-quality outputs while maintaining cost efficiency.
 
-[![CGP-MRG_v2-1](https://github.com/user-attachments/assets/28d2dc61-9f92-42ab-a9f9-5cc42c0e7f81)](#)
+![CGP-MRG Method](https://github.com/Thecoder1012/CGP-MRG/blob/main/assets/cgp-mrg.png)
 
 ## 🚀 **Installation**
 To set up the environment, follow these steps:
@@ -90,7 +89,7 @@ Here is a comparison of various LLaMA models, including both pre-trained and fin
 
 ## **PCoT-SP: Progressive-LLM-guided CoT Prompt with Structured-Section-Phrase**
 
-[![PCoT-SP-1](https://github.com/user-attachments/assets/5ebd1e1b-6e27-4f71-92a5-e4d798a3b654)](#)
+![PCoT-SP](https://github.com/Thecoder1012/CGP-MRG/blob/main/assets/PCoT-SP.png)
 
 **PCoT-SP** is a key component of our methodology, enhancing the medical report generation process through structured prompting and progressive refinement.
 
