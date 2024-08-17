@@ -69,9 +69,6 @@ We provide sample codes in the `demo` folder. The sample model and data are prov
 
 ---
 
-This version adds a small icon to the Google Drive link to make it more visually appealing while keeping the content and structure almost the same.
----
-
 ## **Performance Comparison**
 
 Here is a comparison of various LLaMA models, including both pre-trained and fine-tuned versions:
