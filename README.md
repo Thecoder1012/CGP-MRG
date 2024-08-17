@@ -64,9 +64,7 @@ Download the model probabilities:
 
 ### 🛠️ Demo Run
 
-We provide sample codes in the `demo` folder. The models and sample data are provided in the following link:
-
-[![Google Drive](https://img.icons8.com/color/48/000000/google-drive.png)](https://drive.google.com/drive/folders/1Ac1m-6Ggqdyg7ZteotTK7Ld_wkAqdBMz?usp=sharing)  
+We provide sample codes in the `demo` folder. The sample model and data are provided in the following link:
 [**Google Drive - Sample Data & Model**](https://drive.google.com/drive/folders/1Ac1m-6Ggqdyg7ZteotTK7Ld_wkAqdBMz?usp=sharing)
 
 ---
