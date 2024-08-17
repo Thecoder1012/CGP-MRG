@@ -62,7 +62,7 @@ Download the model probabilities:
 ./dataset/probs.txt
 ```
 
-# 🛠️ Demo Run
+### 🛠️ Demo Run
 
 We provide sample codes in the `demo` folder. The models and sample data are provided in the following link:
 
