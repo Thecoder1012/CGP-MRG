@@ -62,6 +62,16 @@ Download the model probabilities:
 ./dataset/probs.txt
 ```
 
+# 🛠️ Demo Run
+
+We provide sample codes in the `demo` folder. The models and sample data are provided in the following link:
+
+[![Google Drive](https://img.icons8.com/color/48/000000/google-drive.png)](https://drive.google.com/drive/folders/1Ac1m-6Ggqdyg7ZteotTK7Ld_wkAqdBMz?usp=sharing)  
+[**Google Drive - Sample Data & Model**](https://drive.google.com/drive/folders/1Ac1m-6Ggqdyg7ZteotTK7Ld_wkAqdBMz?usp=sharing)
+
+---
+
+This version adds a small icon to the Google Drive link to make it more visually appealing while keeping the content and structure almost the same.
 ---
 
 ## **Performance Comparison**
