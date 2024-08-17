@@ -3,13 +3,47 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torchdiffeq import odeint_adjoint as odeint
 
-# ------
 class MultimodalNetwork(nn.Module):
     def __init__(self, tabular_data_size, n_classes=3):
+        """
+        Initializes the multimodal network which integrates tabular, genetic, and image data.
+        
+        Args:
+            tabular_data_size (int): Number of features in the tabular data.
+            n_classes (int): Number of classes for classification.
+        """
         super(MultimodalNetwork, self).__init__()
-        self.u = nn.Parameter(torch.ones(4))
+        self.u = nn.Parameter(torch.ones(4))  # Weight parameter for loss combination
+
         # Tabular data branch
-        self.tabular_branch = nn.Sequential(
+        self.tabular_branch = self._build_tabular_branch(tabular_data_size)
+        self.tabular_classifier = nn.Linear(16, n_classes)
+        
+        # Genetic data branch
+        self.genetic_branch = self._build_genetic_branch()
+        self.genetic_classifier = nn.Linear(64, n_classes)
+        
+        # Intermediate layer for fusion of tabular and genetic data
+        self.t_g_layer = nn.Linear(16 + 64, 32)
+        
+        # Image data branch
+        self.image_branch = self._build_image_branch()
+        self.image_classifier = nn.Linear(32 * 128 * 128, n_classes)  # Adjust size accordingly
+        
+        # Final classification module
+        self.classifier = nn.Sequential(
+            nn.Linear(32 + 32 * 128 * 128, 1024),
+            nn.ReLU(),
+            nn.Linear(1024, 128),
+            nn.LeakyReLU(),
+            nn.Linear(128, n_classes),
+        )
+        
+        self.weight_tab = nn.Parameter(torch.randn(3))  # Weights for tabular, genetic, and image branches
+
+    def _build_tabular_branch(self, tabular_data_size):
+        """Builds the sequential model for the tabular data branch."""
+        return nn.Sequential(
             nn.Linear(tabular_data_size, 32),
             nn.InstanceNorm1d(32),
             nn.LeakyReLU(),
@@ -35,11 +69,11 @@ class MultimodalNetwork(nn.Module):
             nn.InstanceNorm1d(16),
             nn.ReLU()
         )
-        self.tabular_classifier = nn.Linear(16, n_classes)
-        
-        # Genetic data branch, treating as flat input for simplicity
-        self.genetic_branch = nn.Sequential(
-            nn.Linear(500*6, 1024),
+
+    def _build_genetic_branch(self):
+        """Builds the sequential model for the genetic data branch."""
+        return nn.Sequential(
+            nn.Linear(500 * 6, 1024),
             nn.InstanceNorm1d(1024),
             nn.LeakyReLU(),
             nn.Linear(1024, 512),
@@ -70,11 +104,10 @@ class MultimodalNetwork(nn.Module):
             nn.InstanceNorm1d(64),
             nn.ReLU()
         )
-        self.genetic_classifier = nn.Linear(64, n_classes)
-        self.t_g_layer = nn.Linear(16 + 64, 32)
-        
-        # Image data branch (3D CNN for simplicity, adjust as needed)
-        self.image_branch = nn.Sequential(
+
+    def _build_image_branch(self):
+        """Builds the sequential model for the image data branch."""
+        return nn.Sequential(
             nn.Conv3d(1, 16, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm3d(16),
             nn.LeakyReLU(),
@@ -100,69 +133,46 @@ class MultimodalNetwork(nn.Module):
             nn.LeakyReLU(),
             nn.Flatten()
         )
-        self.image_classifier = nn.Linear(32 * 128 * 128, n_classes)  # Adjust size accordingly
-        
-        # Classification module
-        self.classifier = nn.Sequential(nn.Linear(32 + 32 * 128 * 128, 1024),
-                                        nn.ReLU(),
-                                        nn.Linear(1024, 128),
-                                        nn.LeakyReLU(),
-                                        nn.Linear(128, n_classes),
-                                        )
-        
-        # self.criterion = nn.CrossEntropyLoss()
-        self.weight_tab = nn.Parameter(torch.randn(3))
-        #self.weight_gen = nn.Parameter(torch.randn(3))
-        #self.weight_img = nn.Parameter(torch.randn(3))
 
     def forward(self, tabular_data, genetic_data, image_data, labels):
-        # print(tabular_data.shape)
-        # print(genetic_data.shape)
-        # print(image_data.shape)
+        """
+        Forward pass through the multimodal network.
         
+        Args:
+            tabular_data (torch.Tensor): Input tabular data.
+            genetic_data (torch.Tensor): Input genetic data.
+            image_data (torch.Tensor): Input image data.
+            labels (torch.Tensor): Ground truth labels.
+        
+        Returns:
+            tuple: Output predictions from tabular, genetic, image branches, and the final combined output.
+        """
         tabular_out = self.tabular_branch(tabular_data)
-        genetic_out = self.genetic_branch(genetic_data.view(-1, 500*6))
+        genetic_out = self.genetic_branch(genetic_data.view(-1, 500 * 6))
         image_out = self.image_branch(image_data)
         
-        tabular_cls = self.tabular_classifier(tabular_out)
-        genetic_cls = self.genetic_classifier(genetic_out)
-        #print(image_out.shape)
-        image_cls = self.image_classifier(image_out)
+        tabular_cls = self.weight_tab[0] * self.tabular_classifier(tabular_out)
+        genetic_cls = self.weight_tab[1] * self.genetic_classifier(genetic_out)
+        image_cls = self.weight_tab[2] * self.image_classifier(image_out)
         
-        tabular_cls = self.weight_tab[0] * tabular_cls
-        genetic_cls = self.weight_tab[1] * genetic_cls
-        image_cls = self.weight_tab[2] * image_cls
-	
+        # Fuse tabular and genetic outputs, then combine with image features
         t_g_fused = torch.cat((tabular_out, genetic_out), dim=1)
         t_g_out = self.t_g_layer(t_g_fused)
         fused_representation = torch.cat((t_g_out, image_out), dim=1)
-
-        #print("fused_representation shape:", fused_representation.shape)
         
-        # Classification
+        # Final classification
         output = self.classifier(fused_representation)
-        #print("probs:",output)
-        # print(tabular_cls.shape, labels.shape)
-        # Calculate individual losses for each branch
-        #loss_t = self.criterion(tabular_cls, labels)
-        #loss_g = self.criterion(genetic_cls, labels)
-        #loss_i = self.criterion(image_cls, labels)
-        
-        # Calculate the total loss
-        #loss = self.criterion(output, labels)
-        #weights = torch.softmax(self.u, dim=0)
-        #total_loss = weights[0] * loss_t + weights[1] * loss_g + weights[2] * loss_i + weights[3] * loss
 
         return tabular_cls, genetic_cls, image_cls, output
 
+# Example usage
 '''
 print("==== Passing test case in Model =======")
+
 # Example instantiation and forward pass
 tabular_data_size = 65
 n_classes = 3
-
 model = MultimodalNetwork(tabular_data_size, n_classes)
-# print(model)
 
 # Example data
 tabular_data = torch.randn(1, tabular_data_size)
@@ -172,9 +182,6 @@ labels = torch.tensor([1])
 
 # Forward pass
 tabular_cls, genetic_cls, image_cls, output = model(tabular_data, genetic_data, image_data, labels)
-#print("Weights:", weights)
-# print("Total Loss:", total_loss)
 print("Output:", output)
-
 print("================= MODEL OK! ============ ")
 '''
