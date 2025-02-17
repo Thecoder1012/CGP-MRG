@@ -1,4 +1,4 @@
-# **Cutting Costs, Not Corners: Multi-Modal Medical Report Generation for Alzheimer’s Disease with Fine-Tuned Large Language Models**
+# **Prompting to Bridge the Gap: Accelerating Research in Multi-Modal Medical Report Generation for Alzheimer's Disease**
 ---
 ![CGP-MRG Response](https://github.com/Thecoder1012/CGP-MRG/blob/main/assets/cgp-mrg.gif)
 Sample Output
